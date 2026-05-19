@@ -14,22 +14,22 @@ Composable primitives for search, local discovery, listings, metadata, campaigns
 
 ## Workspace crates
 
-| Crate | Purpose |
-| --- | --- |
-| `use-presence` | Facade crate that re-exports the focused presence crates. |
-| `use-seo` | SEO labels for titles, descriptions, index hints, page intent, link relation, and snippets. |
-| `use-geo` | Geographic presence labels for discovery and targeting. |
-| `use-local` | Local business presence primitives and visibility hints. |
-| `use-listing` | Business listing, citation, and name/address/phone consistency primitives. |
-| `use-sitemap` | Sitemap URL, entry, priority, change frequency, and XML-safe formatting helpers. |
-| `use-robots` | Robots and indexing directive primitives. |
-| `use-canonical` | Canonical URL, alternate URL, redirect, hreflang, and duplicate-surface hints. |
-| `use-metadata` | Page metadata, Open Graph, Twitter card, and social preview primitives. |
-| `use-schema` | Practical schema-like primitive records for common external surfaces. |
-| `use-utm` | UTM parameter parsing, validation, and formatting helpers. |
-| `use-campaign` | Campaign identity, channel, medium, flight, status, and label primitives. |
-| `use-referrer` | Referrer/source label parsing and lightweight traffic classification. |
-| `use-attribution` | Attribution source, medium, touchpoint, window, credit, model-kind, and conversion labels. |
+| Crate             | Purpose                                                                                     |
+| ----------------- | ------------------------------------------------------------------------------------------- |
+| `use-presence`    | Facade crate that re-exports the focused presence crates.                                   |
+| `use-seo`         | SEO labels for titles, descriptions, index hints, page intent, link relation, and snippets. |
+| `use-geo`         | Geographic presence labels for discovery and targeting.                                     |
+| `use-local`       | Local business presence primitives and visibility hints.                                    |
+| `use-listing`     | Business listing, citation, and name/address/phone consistency primitives.                  |
+| `use-sitemap`     | Sitemap URL, entry, priority, change frequency, and XML-safe formatting helpers.            |
+| `use-robots`      | Robots and indexing directive primitives.                                                   |
+| `use-canonical`   | Canonical URL, alternate URL, redirect, hreflang, and duplicate-surface hints.              |
+| `use-metadata`    | Page metadata, Open Graph, Twitter card, and social preview primitives.                     |
+| `use-schema`      | Practical schema-like primitive records for common external surfaces.                       |
+| `use-utm`         | UTM parameter parsing, validation, and formatting helpers.                                  |
+| `use-campaign`    | Campaign identity, channel, medium, flight, status, and label primitives.                   |
+| `use-referrer`    | Referrer/source label parsing and lightweight traffic classification.                       |
+| `use-attribution` | Attribution source, medium, touchpoint, window, credit, model-kind, and conversion labels.  |
 
 ## Installation
 
