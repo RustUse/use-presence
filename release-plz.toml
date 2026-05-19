@@ -1,0 +1,111 @@
+[workspace]
+release = false
+release_always = false
+changelog_update = false
+pr_labels = ["release"]
+max_analyze_commits = 2000
+
+[[package]]
+name = "use-seo"
+release = true
+version_group = "rustuse-presence"
+
+[[package]]
+name = "use-geo"
+release = true
+version_group = "rustuse-presence"
+
+[[package]]
+name = "use-local"
+release = true
+version_group = "rustuse-presence"
+
+[[package]]
+name = "use-listing"
+release = true
+version_group = "rustuse-presence"
+
+[[package]]
+name = "use-sitemap"
+release = true
+version_group = "rustuse-presence"
+
+[[package]]
+name = "use-robots"
+release = true
+version_group = "rustuse-presence"
+
+[[package]]
+name = "use-canonical"
+release = true
+version_group = "rustuse-presence"
+
+[[package]]
+name = "use-metadata"
+release = true
+version_group = "rustuse-presence"
+
+[[package]]
+name = "use-schema"
+release = true
+version_group = "rustuse-presence"
+
+[[package]]
+name = "use-utm"
+release = true
+version_group = "rustuse-presence"
+
+[[package]]
+name = "use-campaign"
+release = true
+version_group = "rustuse-presence"
+
+[[package]]
+name = "use-referrer"
+release = true
+version_group = "rustuse-presence"
+
+[[package]]
+name = "use-attribution"
+release = true
+version_group = "rustuse-presence"
+
+[[package]]
+name = "use-presence"
+release = true
+version_group = "rustuse-presence"
+changelog_update = true
+changelog_path = "./CHANGELOG.md"
+changelog_include = [
+  "use-seo",
+  "use-geo",
+  "use-local",
+  "use-listing",
+  "use-sitemap",
+  "use-robots",
+  "use-canonical",
+  "use-metadata",
+  "use-schema",
+  "use-utm",
+  "use-campaign",
+  "use-referrer",
+  "use-attribution",
+]
+
+[changelog]
+header = """# Changelog
+
+## Unreleased
+"""
+protect_breaking_commits = true
+sort_commits = "oldest"
+commit_parsers = [
+  { message = "^feat(?:\\([^)]+\\))?!?: .+", group = "Added" },
+  { message = "^fix(?:\\([^)]+\\))?!?: .+", group = "Fixed" },
+  { message = "^security(?:\\([^)]+\\))?!?: .+", group = "Security" },
+  { message = "^(?:refactor|perf|change)(?:\\([^)]+\\))?!?: .+", group = "Changed" },
+  { message = "^docs(?:\\([^)]+\\))?!?: .+", group = "Documentation" },
+  { message = "^(?:build|ci|chore|deps|test)(?:\\([^)]+\\))?!?: .+", group = "Tooling" },
+  { footer = "^changelog: ?ignore$", skip = true },
+  { message = "^.*", group = "Changed" },
+]

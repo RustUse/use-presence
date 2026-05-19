@@ -1,0 +1,21 @@
+[package]
+name = "use-schema"
+description = "Practical structured-data primitives for RustUse presence utilities"
+publish = true
+authors.workspace = true
+version.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+readme = "README.md"
+documentation = "https://docs.rs/use-schema"
+keywords = ["schema", "structured", "metadata", "presence", "rustuse"]
+categories = ["data-structures", "web-programming"]
+
+[package.metadata.docs.rs]
+all-features = true
+
+[lints]
+workspace = true

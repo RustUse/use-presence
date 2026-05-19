@@ -1,0 +1,79 @@
+[workspace]
+members = [
+    "crates/use-presence",
+    "crates/use-seo",
+    "crates/use-geo",
+    "crates/use-local",
+    "crates/use-listing",
+    "crates/use-sitemap",
+    "crates/use-robots",
+    "crates/use-canonical",
+    "crates/use-metadata",
+    "crates/use-schema",
+    "crates/use-utm",
+    "crates/use-campaign",
+    "crates/use-referrer",
+    "crates/use-attribution",
+]
+resolver = "3"
+
+[workspace.package]
+authors = ["RustUse Contributors"]
+edition = "2024"
+homepage = "https://rustuse.org"
+license = "MIT OR Apache-2.0"
+publish = false
+readme = "README.md"
+repository = "https://github.com/RustUse/use-presence"
+rust-version = "1.95.0"
+version = "0.0.1"
+
+[workspace.dependencies]
+use-attribution = { version = "0.0.1", path = "crates/use-attribution" }
+use-campaign = { version = "0.0.1", path = "crates/use-campaign" }
+use-canonical = { version = "0.0.1", path = "crates/use-canonical" }
+use-geo = { version = "0.0.1", path = "crates/use-geo" }
+use-listing = { version = "0.0.1", path = "crates/use-listing" }
+use-local = { version = "0.0.1", path = "crates/use-local" }
+use-metadata = { version = "0.0.1", path = "crates/use-metadata" }
+use-presence = { version = "0.0.1", path = "crates/use-presence" }
+use-referrer = { version = "0.0.1", path = "crates/use-referrer" }
+use-robots = { version = "0.0.1", path = "crates/use-robots" }
+use-schema = { version = "0.0.1", path = "crates/use-schema" }
+use-seo = { version = "0.0.1", path = "crates/use-seo" }
+use-sitemap = { version = "0.0.1", path = "crates/use-sitemap" }
+use-utm = { version = "0.0.1", path = "crates/use-utm" }
+
+[workspace.metadata.rustuse.release]
+publish = false
+versioning = "lockstep-0.x"
+first-publish-candidates = [
+    "use-seo",
+    "use-geo",
+    "use-local",
+    "use-listing",
+    "use-sitemap",
+    "use-robots",
+    "use-canonical",
+    "use-metadata",
+    "use-schema",
+    "use-utm",
+    "use-campaign",
+    "use-referrer",
+    "use-attribution",
+    "use-presence",
+]
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+
+[workspace.lints.clippy]
+all = { level = "warn", priority = -1 }
+cargo = { level = "warn", priority = -1 }
+expect_used = "warn"
+multiple_crate_versions = "allow"
+nursery = { level = "warn", priority = -1 }
+pedantic = { level = "warn", priority = -1 }
+todo = "deny"
+unimplemented = "deny"
+unwrap_used = "warn"

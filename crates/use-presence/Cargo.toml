@@ -1,0 +1,36 @@
+[package]
+name = "use-presence"
+description = "Facade crate for RustUse external digital presence primitives"
+publish = true
+authors.workspace = true
+version.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+readme = "README.md"
+documentation = "https://docs.rs/use-presence"
+keywords = ["presence", "seo", "metadata", "campaign", "rustuse"]
+categories = ["data-structures", "web-programming"]
+
+[package.metadata.docs.rs]
+all-features = true
+
+[dependencies]
+use-attribution.workspace = true
+use-campaign.workspace = true
+use-canonical.workspace = true
+use-geo.workspace = true
+use-listing.workspace = true
+use-local.workspace = true
+use-metadata.workspace = true
+use-referrer.workspace = true
+use-robots.workspace = true
+use-schema.workspace = true
+use-seo.workspace = true
+use-sitemap.workspace = true
+use-utm.workspace = true
+
+[lints]
+workspace = true

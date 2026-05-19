@@ -1,0 +1,21 @@
+[package]
+name = "use-seo"
+description = "SEO and search snippet primitives for RustUse presence utilities"
+publish = true
+authors.workspace = true
+version.workspace = true
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+readme = "README.md"
+documentation = "https://docs.rs/use-seo"
+keywords = ["seo", "metadata", "search", "snippet", "rustuse"]
+categories = ["data-structures", "parser-implementations"]
+
+[package.metadata.docs.rs]
+all-features = true
+
+[lints]
+workspace = true
