@@ -30,7 +30,7 @@ jobs:
               use-seo use-geo use-local use-listing use-sitemap use-robots use-canonical use-metadata use-schema use-utm use-campaign use-referrer use-attribution use-presence
         steps:
             - name: Check out repository
-              uses: actions/checkout@v4
+              uses: actions/checkout@v6
               with:
                   fetch-depth: 0
                   persist-credentials: false
